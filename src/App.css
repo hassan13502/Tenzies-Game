@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+.App{
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding: 50px;
+  height: 612px;
+  font-family: "Karla";
+}
+
+.main-div{
+  padding: 50px 35px;
+  width: 500px;
+  height: 500px;
+  background-color: #0B2434;
+
+}
+
+.gameDiv{
+  width: 500px;
+  height: 500px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.die-container{
+  align-self: center;
+  display: grid;
+  grid-template : auto auto / repeat(5,1fr);
+  gap: 25px;
+}
+
+.die{
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 35px;
+  font-weight: 700;
+  box-shadow: 0px 4px 3px 0px #00000026;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.roll-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  align-self: center;
+  background-color: #5035FF;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Karla";
+  color: white;
+  margin-top: 40px;
+
+}
+
+.title{
+  align-self: center;
+  font-size: 42px;
+  margin: 0px;
+}
+
+.instructions{
+  align-self: center;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+@media (max-width : 480px) {
+  .App{
+    padding: 33% 0px;
+    height: 100vh;
+  }
+  
+  
+.main-div{
+  padding: 100px 30px;
+  width: auto;
+  height: 400px;
+}
+
+.gameDiv{
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+}
+
+
+
+}
